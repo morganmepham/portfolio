@@ -1,0 +1,87 @@
+.top-skills-div{
+    grid-row: 2/6;
+    grid-column: 6/10;
+    height: 90%;
+    width: 60%;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem;
+    row-gap: 0.5rem;
+    justify-content: center;
+
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: #00000059 0px 5px 15px;
+
+    overflow-y: scroll;
+    scrollbar-color: gray #fff;
+    scrollbar-width: thin;
+}
+.top-skills-div::-webkit-scrollbar{
+    width: 0.4rem;
+}
+.top-skills-div::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+.top-skills-div::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+.top-skills-div::-webkit-scrollbar-button:end{
+    height: 1rem; 
+}
+.top-skills-div::-webkit-scrollbar-button:start{
+    height: 1rem;
+}
+
+.top-skills-title{
+    text-align: center;
+}
+.skill-item{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    padding: 0.4rem;
+    transition: all ease 0.8s;
+}
+.skill-img{
+    width: 70%;
+}
+.skill-text{
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+
+.skill-item:hover{
+    background-color: gray;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .top-skills-div{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .top-skills-div{
+        grid-row: 4/7;
+        grid-column: 1/6;
+        justify-self: center;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .top-skills-div{
+        grid-row: 4/6;
+        grid-column: 1/9;
+        justify-self: center;
+        width: 90%;
+    }
+    .skill-img{
+        width: 50%;
+    }
+    .skill-text{
+        font-size: 2rem;
+    }
+}

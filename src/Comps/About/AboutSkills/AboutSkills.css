@@ -1,0 +1,61 @@
+.about-skills-div{
+    grid-row: 1/4;
+    grid-column: 6/10;
+    height: 90%;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    box-shadow: #00000059 0px 0.3rem 0.95rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 4rem;
+    overflow-y: scroll;
+    scrollbar-color: gray #fff;
+    scrollbar-width: thin;
+}
+.about-skills-div::-webkit-scrollbar{
+    width: 0.4rem;
+}
+.about-skills-div::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+.about-skills-div::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+.about-skills-div::-webkit-scrollbar-button:end{
+    height: 1rem; 
+}
+.about-skills-div::-webkit-scrollbar-button:start{
+    height: 1rem;
+}
+.about-skills-title{
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+}
+.about-skills-item{
+    display: flex;
+    align-items: center;
+}
+.skill-item-text{
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+@media screen and (max-width: 750px) {
+    .about-skills-div{
+        grid-row: 6/9;
+        grid-column: 1/5;
+    }
+}
+@media screen and (max-width: 450px) {
+    .about-skills-div{
+        grid-row: 5/7;
+        grid-column: 1/9;
+    }
+    .skill-item-text{
+        font-size: 2rem;
+    }
+}

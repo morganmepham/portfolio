@@ -1,0 +1,79 @@
+.github-div{
+    grid-row: 7/8;
+    grid-column: 6/10;
+    height: 70%;
+    align-self: center;
+    justify-self: center;
+    width: 60%;
+
+    padding: 1rem;
+    padding-left: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: #00000059 0px 5px 15px;
+
+    transition: all ease 0.8s;
+}
+.github-link{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #000;
+}
+.github-white{
+    display: none;
+}
+.github-icon{
+    height: fit-content;
+}
+.github-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.github-link:hover{
+    color: #fff;
+}
+.github-div:hover{
+    background-color: #161b22;
+    color: #fff;
+    cursor: pointer;
+}
+.github-div:hover .github-icon{
+    display: none;
+}
+.github-div:hover .github-white{
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    .github-icon{
+        height: 60%;
+    }
+    .github-div{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .github-div{
+        grid-column: 6/9;
+        grid-row: 5/6;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .github-icon{
+        height: 60%;
+    }
+    .github-div{
+        height: 50%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .github-div{
+        grid-row: 6/7;
+        grid-column: 5/9;
+    }
+}

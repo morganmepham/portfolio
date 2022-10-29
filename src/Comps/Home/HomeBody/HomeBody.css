@@ -1,0 +1,29 @@
+.home-body-div{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr) ;
+    margin-top: 8rem;
+}
+.home-name{
+    font-size: 4rem;
+    grid-column: 1/9;
+    text-align: center;
+    align-self: center;
+}
+.name-div{
+    grid-column: 3/7;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.name-letter:hover{
+    color: #fff;
+}
+.letter-space{
+    width: 3%;
+}
+

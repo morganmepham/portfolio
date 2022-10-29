@@ -1,0 +1,24 @@
+.about-body-div{
+    height: 60rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr) ;
+    margin-top: 8rem;
+}
+
+@media screen and (max-width: 750px) {
+    .about-body-div{
+        height: 80rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .about-body-div{
+        height: 100rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .about-body-div{
+        height: 160rem;
+    }
+}
