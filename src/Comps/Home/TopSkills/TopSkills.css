@@ -87,4 +87,7 @@
     .skill-text{
         font-size: 2rem;
     }
+    .skill-item:hover{
+        background-color: #fff;
+    }
 }

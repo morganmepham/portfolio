@@ -33,6 +33,9 @@
     animation: fadeIn 1s forwards 0.5s;
     
 }
+.proj-github-link-text{
+    justify-self: center;
+}
 .proj-github-link:hover{
     background-color: #161b22;
 }

@@ -1,0 +1,38 @@
+.contact-linkedin-div{
+    grid-row: 4/5;
+    grid-column: 4/6;
+    justify-self: center;
+    align-self: center;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #007BB5;
+    color: #fff;
+    width: 75%;
+    padding: 1rem;
+    border-radius: 2rem;
+
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+}
+.contact-link{
+   
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #FFF;
+}
+.contact-link:hover{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1100px) {
+    .contact-linkedin-div{
+        grid-column: 1/6;
+        grid-row: 4/5;
+        width: 40%;
+    }
+    .contact-linkedin-text{
+        font-size: 2rem;
+    }
+}
