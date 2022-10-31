@@ -7,6 +7,8 @@
     position: relative;
     border-radius: 2rem;
 
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
 }
 .quick-about-img{
     height: 100%;

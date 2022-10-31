@@ -1,0 +1,253 @@
+.proj-grid-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 35rem;
+    padding: 3rem;
+    gap: 3rem;
+}
+
+.proj-gird-item{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    animation: fadeIn 1s forwards 0.5s;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.proj-item-title{
+    grid-column: 1/4;
+    justify-self: center;
+    font-size: 2.5rem;
+}
+
+.tech-stack-div{
+    grid-row: 2/4;
+    grid-column: 1/4;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.tech-stack-title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    grid-column: 1/4;
+    justify-self: start;
+}
+.tech-stack-name{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.proj-item-disc{
+    grid-column: 1/4;
+    grid-row: 4/7;
+    align-self: start;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.proj-item-img{
+    grid-column: 4/8;
+    grid-row: 1/5;
+
+    height: 90%;
+    margin-right: 1rem;
+    justify-self: end;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.proj-item-buttons-div{
+    grid-column: 4/8;
+    grid-row: 5/7;
+    width: 75%;
+    height: 90%;
+    justify-self: end;
+    margin-right: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.proj-link{
+    width: 80%;
+    height: 40%;
+}
+.live-button{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    background-color: #207a20;
+    border-radius: 2rem;
+    height: 100%;
+    color: #fff;
+}
+.git-button{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    background-color: #161b22bd;
+    border-radius: 2rem;
+    height: 100%;
+    color: #fff;
+}
+
+.git-button:hover,
+.live-button:hover{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1600px) {
+    .proj-gird-item{
+        padding-bottom: 7rem;
+    }
+    .proj-item-img{
+        height: 80%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .proj-item-disc{
+        font-size: 1.2rem;
+    }
+    .proj-gird-item{
+        padding-bottom: 4rem;
+    }
+    .proj-item-img{
+        height: 70%;
+    }
+    .proj-item-title{
+        font-size: 2rem;
+    }
+    .proj-item-buttons-div{
+        width: 90%;
+    }
+    .git-icon,
+    .live-icon{
+        height: 70%;
+    }
+}
+@media screen and (max-width: 920px) {
+    .proj-item-disc{
+        font-size: 1.2rem;
+    }
+    .proj-gird-item{
+        padding-bottom: 4rem;
+    }
+    .proj-item-img{
+        height: 60%;
+    }
+    .proj-item-title{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .proj-gird-item{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        padding-bottom: 0;
+    }
+    .proj-item-title{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .tech-stack-div{
+        grid-column: 1/4;
+        grid-row: 2/4;
+    }
+    .proj-item-disc{
+        grid-column: 1/4;
+        grid-row: 4/7;
+    }
+    .proj-item-buttons-div{
+        grid-column: 1/3;
+        grid-row: 8/11;
+        justify-self: start;
+        height: 100%;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    .proj-link{
+        height: 90%;
+        width: 50%;
+    }
+    .git-icon,
+    .live-icon{
+        height: 70%;
+    }
+    .proj-item-img{
+        grid-column: 2/4;
+        grid-row: 8/11;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .proj-item-buttons-div{
+        grid-row: 7/11;
+        gap: 0;
+        height: 100%;
+    }
+    .proj-link{
+        height: 90%;
+        width: 50%;
+    }
+    .live-button,
+    .git-button{
+        height: 70%;
+        align-content: center;
+    }
+    .git-icon,
+    .live-icon{
+        height: 40%;
+    }
+    .proj-item-img{
+        grid-column: 2/4;
+        grid-row: 8/11;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .proj-item-buttons-div{
+        grid-row: 8/11;
+        grid-column: 1/4;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .proj-link{
+        height: 70%;
+        width: 70%;
+    }
+    .live-button,
+    .git-button{
+        height: 70%;
+        align-content: center;
+    }
+    .git-icon,
+    .live-icon{
+        height: 40%;
+    }
+    .proj-item-img{
+        display: none;
+    }
+}

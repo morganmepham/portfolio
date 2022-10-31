@@ -18,6 +18,9 @@
     overflow-y: scroll;
     scrollbar-color: gray #fff;
     scrollbar-width: thin;
+
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
 }
 .top-skills-div::-webkit-scrollbar{
     width: 0.4rem;

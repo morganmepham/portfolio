@@ -12,6 +12,9 @@
     box-shadow: #00000059 0px 5px 15px;
 
     transition: all ease 0.8s;
+
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
 }
 .linkedin-link{
     width: 100%;

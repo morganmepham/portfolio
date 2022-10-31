@@ -8,6 +8,9 @@
     border-radius: 2rem;
     margin-left: 5rem;
 
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+
 }
 .quick-proj-img{
     height: 100%;

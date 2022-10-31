@@ -27,8 +27,3 @@
     width: 3%;
 }
 
-@media screen and (max-width: 450px) {
-    .home-body-div{
-        height: 130%;
-    }
-}
