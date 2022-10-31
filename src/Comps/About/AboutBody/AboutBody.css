@@ -14,11 +14,16 @@
 }
 @media screen and (max-width: 550px) {
     .about-body-div{
-        height: 100rem;
+        height: 130rem;
     }
 }
 @media screen and (max-width: 450px) {
     .about-body-div{
-        height: 160rem;
+        height: 180rem;
+    }
+}
+@media screen and (max-width: 390px) {
+    .about-body-div{
+        height: 220rem;
     }
 }

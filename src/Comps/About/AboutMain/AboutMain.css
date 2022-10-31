@@ -64,6 +64,11 @@
         margin-top: 2rem;
     }
 }
+@media screen and (max-width: 480px) {
+    .about-main-div{
+        grid-row: 1/5;
+    }
+}
 @media screen and (max-width: 450px) {
     .about-main-text1,
     .about-main-text2{
