@@ -13,10 +13,13 @@ import money_tracker from '../../../images/money_tracker.PNG'
 import movie_review from '../../../images/movie_review.PNG'
 import dyson_cyclone from '../../../images/dyson_cyclone.PNG'
 import freelance from '../../../images/freelance.PNG'
+import pokedex from '../../../images/Pokedex.PNG'
 
 const ProjectsGrid = () => {
     const projects = [
         {title: 'Money Tracker', techStack: ['React', 'Javascript', 'ChartJs', 'CSS', 'HTML', 'Jest'], disc: 'This is a web application to help track your money. Features include, adding contacts, monitoring transactions, setting a budget and more! The bulk of the app uses local storage data, which I found would work best for me in this case due to my need to store multiple user accounts and transaction data between contacts. In addition, I branched out and used to ChartJs Library to incorporate an analytics page.', imgSrc: money_tracker, git: 'https://github.com/morganmepham/money-tracker', live: 'https://morgan-moneytracker.netlify.app/'},
+
+        {title: 'Pokemon Database', techStack: ['React', 'Javascript', 'CSS', 'HTML'], disc: 'This project fulfilled a childhood dream of mine, building my very own Pokedex. I used the PokeAPI for this project as it provided all the data I needed and most importantly, the ability to call as many results in one call as i like. The site allows you to search through the original 151 Pokemon and click on each pokemon to display unique information. ', imgSrc: pokedex, git: 'https://github.com/morganmepham/pokemon_database', live: 'https://pokedex-morgan.netlify.app/'},
 
         {title: 'Movie Reviews', techStack: ['Javascript', 'CSS', 'HTML'], disc: 'In this application I worked with The Movie Database API to allow users to search through millions of Movies and TV shows. The API allowed me to receive data on the title such as revenue and runtime and display this for the user. I took this further with the ability to leave reviews and add to a watch list. Reviews are displayed on a leaderboard with filter options between Movies, TV shows, and TV shows as seasons.', imgSrc: movie_review, git: 'https://github.com/morganmepham/Media-Rating-App', live: 'https://movieapp-review.netlify.app/'},
 
